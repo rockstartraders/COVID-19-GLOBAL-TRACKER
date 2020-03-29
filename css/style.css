@@ -1,0 +1,104 @@
+html {
+  margin: 0;
+  padding: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100vh;
+  /* background: #5b7b75; */
+  background: #424242;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+#particles-js {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  margin-top: 4em;
+  padding: auto;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: whitesmoke;
+  opacity: 0.6;
+  background-image: none;
+  flex: 1;
+  padding: 0 0.5em;
+  color: black;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  
+}
+
+select option {
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1em;
+  font-size: 1em;
+}
+select::-ms-expand {
+  display: none;
+}
+.select {
+  position: relative;
+  display: flex;
+  width: 28em;
+  height: 3em;
+  line-height: 3;
+  background: whitesmoke;
+  overflow: hidden;
+  border-radius: 0.25em;
+  margin-left: 3em;
+  
+}
+
+.select::after {
+  content: "\2630";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #54b4b4;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.3s all ease;
+}
+
+.select:hover::after {
+  color: #ffffff;
+  content: "\1F50D";
+  position: absolute;
+}
+
+
+#result{
+  margin-top: 15px;
+  padding: 0;
+  align-items: center;
+  letter-spacing: 1px;
+  position: relative;
+  line-height: 10px;
+  
+}
