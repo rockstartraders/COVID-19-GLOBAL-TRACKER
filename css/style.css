@@ -1,6 +1,6 @@
 html {
   margin: 0;
-  padding: auto;
+  padding: 0;
 }
 
 body {
@@ -95,10 +95,12 @@ select::-ms-expand {
 #result {
   margin-top: 15px;
   padding: 0;
+  margin-left: 3em;
   align-items: center;
   letter-spacing: 1px;
   position: relative;
   line-height: 10px;
+  
 }
 
 #stat {
