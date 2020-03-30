@@ -1,73 +1,5 @@
 
-function lowd() {
 
-
-    const konvert = new Intl.NumberFormat('en');    
-    const persent = new Intl.NumberFormat('en',{style:'percent'});
-
-    fetch('https://thevirustracker.com/free-api?global=stats')
-    .then(response => response.json())
-    .then(data => {
-
-        var object = JSON.stringify(data); // string first 
-        var par = JSON.parse(object);  // convert back to object 
-
-
-
-        // Total Case
-        var ta = par.results[0].total_cases;
-        var taa = konvert.format(ta);
-        var bt = document.getElementById("name");  
-         
-
-        bt.innerHTML = ('Total no. of cases: ' + taa);  // result sa name
-        console.log(ta);
-
-
-        // Total Recovered
-        var tb = par.results[0].total_recovered;
-        var tbb = konvert.format(tb);
-        var tbb1 = tbb.fontcolor('#27fa00');  // color
-        var bk = document.getElementById("date");  
-         
-
-        bk.innerHTML = ('Total no. recovered: ' + tbb1);  
-
-
-        // Total D
-        var tc = par.results[0].total_deaths;
-        var tcc = konvert.format(tc);
-        var tcc1 = tcc.fontcolor('#f70d1a');  // color
-        var bk1 = document.getElementById("confirm");  
-            
-
-        bk1.innerHTML = ('Total no. of deaths: ' + tcc1);  
-
-        // Total Unresolved
-        var td = par.results[0].total_unresolved;
-        var tdd = konvert.format(td);
-        var tdd1 = tdd.fontcolor('#FFEB3B');  // color
-        var bk2 = document.getElementById("recovered");  
-            
-
-        bk2.innerHTML = ('Total no. of unresolved: ' + tdd1);  
-
-
-        // Total Case for today
-        var te = par.results[0].total_active_cases;
-        var tee = konvert.format(te);
-        var tee1 = tee.fontcolor('#e53935');  // color
-        var bk3 = document.getElementById("stat");  
-            
-
-        bk3.innerHTML = ('Total no. of active cases: ' + tee1);  // result sa name
-         
-
-
-    }  
-
-     
-    )};
 
 
 
@@ -182,3 +114,74 @@ function selek() {
 
         )
 }
+
+
+function lowd() {
+
+
+    const konvert = new Intl.NumberFormat('en');    
+    const persent = new Intl.NumberFormat('en',{style:'percent'});
+
+    fetch('https://thevirustracker.com/free-api?global=stats')
+    .then(response => response.json())
+    .then(data => {
+
+        var object = JSON.stringify(data); // string first 
+        var par = JSON.parse(object);  // convert back to object 
+
+
+
+        // Total Case
+        var ta = par.results[0].total_cases;
+        var taa = konvert.format(ta);
+        var bt = document.getElementById("name");  
+         
+
+        bt.innerHTML = ('Total no. of cases: ' + taa);  // result sa name
+        console.log(ta);
+
+
+        // Total Recovered
+        var tb = par.results[0].total_recovered;
+        var tbb = konvert.format(tb);
+        var tbb1 = tbb.fontcolor('#27fa00');  // color
+        var bk = document.getElementById("date");  
+         
+
+        bk.innerHTML = ('Total no. recovered: ' + tbb1);  
+
+
+        // Total D
+        var tc = par.results[0].total_deaths;
+        var tcc = konvert.format(tc);
+        var tcc1 = tcc.fontcolor('#f70d1a');  // color
+        var bk1 = document.getElementById("confirm");  
+            
+
+        bk1.innerHTML = ('Total no. of deaths: ' + tcc1);  
+
+        // Total Unresolved
+        var td = par.results[0].total_unresolved;
+        var tdd = konvert.format(td);
+        var tdd1 = tdd.fontcolor('#FFEB3B');  // color
+        var bk2 = document.getElementById("recovered");  
+            
+
+        bk2.innerHTML = ('Total no. of unresolved: ' + tdd1);  
+
+
+        // Total Case for today
+        var te = par.results[0].total_active_cases;
+        var tee = konvert.format(te);
+        var tee1 = tee.fontcolor('#e53935');  // color
+        var bk3 = document.getElementById("stat");  
+            
+
+        bk3.innerHTML = ('Total no. of active cases: ' + tee1);  // result sa name
+         
+
+
+    }  
+
+     
+    )};
