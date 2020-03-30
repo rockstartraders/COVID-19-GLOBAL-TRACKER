@@ -49,7 +49,6 @@ select {
   cursor: pointer;
   font-size: 1em;
   font-family: "Montserrat", sans-serif;
-  
 }
 
 select option {
@@ -58,9 +57,11 @@ select option {
   letter-spacing: 1em;
   font-size: 1em;
 }
+
 select::-ms-expand {
   display: none;
 }
+
 .select {
   position: relative;
   display: flex;
@@ -71,7 +72,6 @@ select::-ms-expand {
   overflow: hidden;
   border-radius: 0.25em;
   margin-left: 3em;
-  
 }
 
 .select::after {
@@ -92,19 +92,37 @@ select::-ms-expand {
   position: absolute;
 }
 
-
-#result{
+#result {
   margin-top: 15px;
   padding: 0;
   align-items: center;
   letter-spacing: 1px;
   position: relative;
   line-height: 10px;
-  
 }
 
-#stat{
-  color:wheat;
+#stat {
+  color: wheat;
   font-weight: bolder;
   font-size: 3vh;
 }
+
+
+/* media query */
+
+@media only screen  and (max-width : 1224px) {
+
+  .select {
+    
+    width: 20em;
+    height: 3em;
+    
+    
+  }
+
+
+
+/* buttons css */
+
+
+/* puter */
