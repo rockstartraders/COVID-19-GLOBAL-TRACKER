@@ -10,7 +10,7 @@ body {
   align-items: center;
   height: 100vh;
   /* background: #5b7b75; */
-  background: #424242;
+  background: #292525;
   font-family: "Montserrat", sans-serif;
   color: #fff;
 }
@@ -101,4 +101,10 @@ select::-ms-expand {
   position: relative;
   line-height: 10px;
   
+}
+
+#stat{
+  color:wheat;
+  font-weight: bolder;
+  font-size: 3vh;
 }
