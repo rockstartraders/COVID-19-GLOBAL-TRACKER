@@ -21,6 +21,7 @@ function lowd() {
          
 
         bt.innerHTML = ('Total no. of cases: ' + taa);  // result sa name
+        console.log(ta);
 
 
         // Total Recovered
