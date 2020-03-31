@@ -22,8 +22,8 @@ body {
 }
 
 .wrapper {
-  margin-top: 4em;
-  padding: auto;
+  margin-top: 0;
+  padding: 0;
   align-items: center;
 }
 
@@ -31,6 +31,7 @@ h1 {
   text-align: center;
   letter-spacing: 3px;
   text-transform: uppercase;
+  padding-top: 0;
 }
 
 select {
@@ -72,7 +73,7 @@ select::-ms-expand {
   background: whitesmoke;
   overflow: hidden;
   border-radius: 0.25em;
-  margin-left: 2.5em;
+  margin-left: 1em;
 }
 
 .select::after {
@@ -84,7 +85,7 @@ select::-ms-expand {
   background: #54b4b4;
   cursor: pointer;
   pointer-events: none;
-  transition: 0.3s all ease;
+  transition: 0.4s all ease;
 }
 
 .select:hover::after {
@@ -199,6 +200,18 @@ select::-ms-expand {
   color: #4078c0;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
+}
+
+/* text sa top */
+
+#full
+{
+ text-align: center;
+ margin:0;
+ padding-top:0;
+ font-weight: bolder;
+ 
+
 }
 
 
