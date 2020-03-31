@@ -125,7 +125,13 @@ select::-ms-expand {
 
   body{
   font-size: 15px;
+  margin-top: 0px;
 
+  }
+
+
+  #full{
+      display: none;
   }
 }
 
