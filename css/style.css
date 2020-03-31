@@ -66,13 +66,13 @@ select::-ms-expand {
 .select {
   position: relative;
   display: flex;
-  width: 28em;
+  width: 29em;
   height: 3em;
   line-height: 3;
   background: whitesmoke;
   overflow: hidden;
   border-radius: 0.25em;
-  margin-left: 3em;
+  margin-left: 2.5em;
 }
 
 .select::after {
@@ -99,6 +99,7 @@ select::-ms-expand {
   letter-spacing: 1px;
   position: relative;
   line-height: 10px;
+  margin-left: 0px;
 
 }
 
@@ -131,3 +132,73 @@ select::-ms-expand {
 
 
 /* puter */
+
+.footer {
+  background-color: #292525;
+  height: 22px;
+  width: 100%;
+  padding: 22px;
+  letter-spacing: 10px;
+}
+
+.fa-youtube {
+  color: #f6f6f6;
+}
+
+.fa-facebook {
+  color: #f6f6f6;
+}
+
+.fa-github {
+  color: #f6f6f6;
+}
+
+.fa-terminal {
+  color: #f6f6f6;
+}
+
+
+
+.container-fluid {
+  text-align: center;
+  font-size: 2em;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Icon Hover */
+
+.fa-facebook:hover {
+  transform: scale(1.6) rotate(25deg);
+  transition: 0.4s all;
+  color: #3b5998;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.fa-github:hover {
+  transform: scale(1.6) rotate(25deg);
+  transition: 0.4s all;
+  color: #6e5494;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.fa-youtube:hover {
+  transform: scale(1.6) rotate(25deg);
+  transition: 0.4s all;
+  color: #c4302b;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.fa-terminal:hover {
+  transform: scale(1.6) rotate(25deg);
+  transition: 0.4s all;
+  color: #4078c0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+
