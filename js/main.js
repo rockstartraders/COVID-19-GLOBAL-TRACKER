@@ -21,7 +21,7 @@ function lowd() {
 
 
           aw = document.getElementById("date");  
-          aw.innerHTML=(e +  '&nbsp ' + 'is not found via JHU database.');
+          aw.innerHTML=(e +  '&nbsp ' + 'is not found via J.H.U database.');
 
           aww= document.getElementById("name");
           aww.innerHTML=('Possible that There is no recorded');
