@@ -24,13 +24,13 @@ function lowd() {
           aw.innerHTML=(e +  '&nbsp ' + 'is not found via J.H.U database.');
 
           aww= document.getElementById("name");
-          aww.innerHTML=('Possible that there is no recorded');
+          aww.innerHTML=('Possible that there is no recorded case yet');
 
           
 
 
           awe = document.getElementById("confirm");
-          awe.innerHTML=('case yet for this country.');
+          awe.innerHTML=('for this country.');
 
 
           awr = document.getElementById("recovered");
