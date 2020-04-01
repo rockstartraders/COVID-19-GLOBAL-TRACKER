@@ -79,7 +79,7 @@ function lowd() {
                 var b = document.getElementById("date");  
                 
        
-                b.innerHTML = ('Last Updated: ' + '&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp '  + aa);  // result sa name
+                b.innerHTML = ('Last Updated: ' + '&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp '  + aa);  // result sa name
     
     
     

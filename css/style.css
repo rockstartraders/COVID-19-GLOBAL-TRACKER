@@ -110,6 +110,11 @@ select::-ms-expand {
   font-size: 3vh;
 }
 
+#date {
+padding-bottom: 5px;
+font-weight: bolder;
+}
+
 
 /* media query */
 
