@@ -22,6 +22,19 @@
     <script src="https://cdn.rawgit.com/bradley/Blotter/3007fe6e/build/materials/fliesMaterial.js"></script>
 
     <title>COVID-19 GLOBAL TRACKER</title>
+
+
+
+
+
+    <script>
+      if( /Android|webOS|iPhone|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )     
+          {
+          var url = "https://covid-track19.netlify.app/";    
+          $(location).attr('href',url);
+
+          }
+  </script>
   </head>
 
   <body>
@@ -30,7 +43,9 @@
     <p class="blink">Covid-19 Global Tracker</p>
     <div class="wrapper">
 
-
+<br>
+<br>
+<br>
       <div class="select">
         <select name="format" id="format" onchange="lowd();">
           <option selected disabled>Select A Country</option>

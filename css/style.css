@@ -104,9 +104,15 @@ select::-ms-expand {
   font-size: 3vh;
 }
 
-#date {
+#date, #name, #confirm, #recovered, #d, #stat, #tconf, #td {
   padding-bottom: 5px;
   font-weight: bolder;
+
+  --minFontSize: 16px;
+  --maxFontSize: 20px;
+  --scaler: 10vw;
+  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );    
+  font-weight: 800;
 }
 
 
@@ -208,8 +214,12 @@ select::-ms-expand {
   font-weight: bolder;
   margin-bottom: 13px;
   color: white;
-  font-size: 4vw;
-  letter-spacing: 2px;
+  --minFontSize: 55px;
+  --maxFontSize: 65px;
+  --scaler: 10vw;
+  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );    
+  font-weight: 800;
+  
   animation: glitch 2s steps(100) infinite;
 }
 
@@ -395,6 +405,8 @@ select::-ms-expand {
     text-shadow: -1px 0 0 blue, 1px 0 0 lime;
   }
 }
+
+
 
 
 /* media query */
